@@ -66,5 +66,26 @@ button.textContent = siteContent["cta"]["button"];
 const middleImg = document.getElementById("middle-img");
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+// globals for p & h4......
+
+const content = document.querySelectorAll(".text-content h4");
+const contentP = document.querySelectorAll(".text-content p");
+
+content[0].textContent = siteContent["main-content"]["features-h4"];
+content[1].textContent = siteContent["main-content"]["about-h4"];
+content[2].textContent = siteContent["main-content"]["services-h4"];
+content[3].textContent = siteContent["main-content"]["product-h4"];
+content[4].textContent = siteContent["main-content"]["vision-h4"];
+// console.log(content)
+contentP[0].textContent = siteContent["main-content"]["features-content"];
+contentP[1].textContent = siteContent["main-content"]["about-content"];
+contentP[2].textContent = siteContent["main-content"]["services-content"];
+contentP[3].textContent = siteContent["main-content"][""];
+contentP[4].textContent = siteContent["main-content"][""];
+
+
+// Contact.....
+
+// footer...
 
 
