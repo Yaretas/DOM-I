@@ -39,4 +39,32 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+//  setting navigation.....
+const anchorItems = document.querySelectorAll("a");
+
+anchorItems[0].textContent = siteContent["nav"]["nav-item-1"];
+anchorItems[1].textContent = siteContent["nav"]["nav-item-2"];
+anchorItems[2].textContent = siteContent["nav"]["nav-item-3"];
+anchorItems[3].textContent = siteContent["nav"]["nav-item-4"];
+anchorItems[4].textContent = siteContent["nav"]["nav-item-5"];
+anchorItems[5].textContent = siteContent["nav"]["nav-item-6"];
+
+// cta-Content section.....
+const mainTittle = document.querySelector("h1");
+mainTittle.textContent = siteContent["cta"]["h1"];
+
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"]);
+
+const button = document.querySelector("button");
+button.textContent = siteContent["cta"]["button"];
+// console.log(button)
+
+// Main Content Section...........
+const middleImg = document.getElementById("middle-img");
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+
+
