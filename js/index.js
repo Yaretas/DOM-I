@@ -89,10 +89,13 @@ const contactP = document.querySelectorAll(".contact p");
 
 contactHeader.textContent = siteContent["contact"]["contact-h4"];
 // console.log(`this is ${contactP}`);
-contactP[0].textContent = siteContent["contact"]["vision-content"];
-contactP[1].textContent = siteContent["contact"]["vision-content"];
-contactP[2].textContent = siteContent["contact"]["vision-content"];
+contactP[0].textContent = siteContent["contact"]["address"];
+contactP[1].textContent = siteContent["contact"]["phone"];
+contactP[2].textContent = siteContent["contact"]["email"];
 
 // footer...
+
+const footerP = document.querySelector("footer p");
+footerP.textContent = siteContent["footer"]["copyright"];
 
 
