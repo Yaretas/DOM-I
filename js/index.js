@@ -80,11 +80,18 @@ content[4].textContent = siteContent["main-content"]["vision-h4"];
 contentP[0].textContent = siteContent["main-content"]["features-content"];
 contentP[1].textContent = siteContent["main-content"]["about-content"];
 contentP[2].textContent = siteContent["main-content"]["services-content"];
-contentP[3].textContent = siteContent["main-content"][""];
-contentP[4].textContent = siteContent["main-content"][""];
-
+contentP[3].textContent = siteContent["main-content"]["product-content"];
+contentP[4].textContent = siteContent["main-content"]["vision-content"];
 
 // Contact.....
+const contactHeader = document.querySelector(".contact h4");
+const contactP = document.querySelectorAll(".contact p");
+
+contactHeader.textContent = siteContent["contact"]["contact-h4"];
+// console.log(`this is ${contactP}`);
+contactP[0].textContent = siteContent["contact"]["vision-content"];
+contactP[1].textContent = siteContent["contact"]["vision-content"];
+contactP[2].textContent = siteContent["contact"]["vision-content"];
 
 // footer...
 
